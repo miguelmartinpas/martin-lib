@@ -1,9 +1,8 @@
 {
   "name": "martin-lib",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Library of components for React",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
   "files": [
     "dist"
   ],
@@ -11,7 +10,6 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && rollup -c && tsc",
-    "npm:login": "npm-cli-login -u $NPM_USER -p $NPM_PASSWORD -e $NPM_MAIL",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,7 +29,6 @@
   "devDependencies": {
     "@types/react": "^17.0.0",
     "less": "^3.13.0",
-    "npm-cli-login": "^0.1.1",
     "postcss": "^8.2.1",
     "rollup": "^2.35.1",
     "rollup-plugin-postcss": "^4.0.0",
