@@ -1,4 +1,4 @@
-import Square, { ISquare } from "./components/atoms/Square";
+import Square, { ISquare } from './components/atoms/Square';
 
 export type { ISquare };
 

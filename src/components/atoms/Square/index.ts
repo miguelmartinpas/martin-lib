@@ -1,4 +1,4 @@
-import Square, { ISquare } from "./Square";
+import Square, { ISquare } from './Square';
 
 export type { ISquare };
 
