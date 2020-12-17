@@ -14,8 +14,8 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - run: npm install
         env:
-          NODE_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm run build
       - run: npm publish
         env:
-          NODE_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
