@@ -1,0 +1,39 @@
+{
+  "name": "martin-lib",
+  "version": "1.0.0",
+  "description": "Library of components for React",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && rollup -c && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelmartinpas/martin-lib.git"
+  },
+  "author": "Miguel Martín",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelmartinpas/martin-lib/issues"
+  },
+  "homepage": "https://github.com/miguelmartinpas/martin-lib#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "postcss": "^8.2.1",
+    "less": "^3.13.0",
+    "rollup": "^2.35.1",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typescript": "^4.1.3"
+  }
+}
