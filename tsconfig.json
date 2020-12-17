@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
     "outDir": "./dist",
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
