@@ -16,6 +16,8 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm run build
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
