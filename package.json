@@ -15,7 +15,9 @@
     "test": "jest --coverage=false --detectOpenHandles",
     "test:coverage": "jest --coverage=true --detectOpenHandles",
     "test:watch": "jest --watch --coverage=false --detectOpenHandles",
-    "test:debug": "jest -o --watch --coverage=false --detectOpenHandles"
+    "test:debug": "jest -o --watch --coverage=false --detectOpenHandles",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -34,10 +36,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "@storybook/addon-actions": "^6.1.10",
-    "@storybook/addon-essentials": "^6.1.10",
-    "@storybook/addon-links": "^6.1.10",
-    "@storybook/react": "^6.1.10",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/react": "^6.1.11",
     "@types/enzyme": "3.10.8",
     "@types/enzyme-adapter-react-16": "1.0.6",
     "@types/react": "^17.0.0",
@@ -63,6 +65,8 @@
     "jest-css-modules": "^2.1.0",
     "jest-enzyme": "^7.1.2",
     "jest-fetch-mock": "3.0.3",
+    "less": "^3.13.0",
+    "less-loader": "^7.1.0",
     "lint-staged": "^10.5.3",
     "postcss": "^8.1.14",
     "prettier": "^2.2.1",
