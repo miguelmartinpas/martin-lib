@@ -16,7 +16,11 @@ jobs:
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
             - run: npm run lint
+              env:
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
             - run: npm run test
+              env:
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
             - run: npm run build
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
