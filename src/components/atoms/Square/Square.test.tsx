@@ -23,19 +23,21 @@ describe('Square Component', () => {
         });
 
         it.each`
-            color        | width        | height       | expectedColor | expectedWidth | expectedHeight
-            ${undefined} | ${undefined} | ${undefined} | ${'olive'}    | ${50}         | ${50}
-            ${'red'}     | ${undefined} | ${undefined} | ${'red'}      | ${50}         | ${50}
-            ${undefined} | ${100}       | ${undefined} | ${'olive'}    | ${100}        | ${50}
-            ${undefined} | ${undefined} | ${120}       | ${'olive'}    | ${50}         | ${120}
+            color        | width        | height       | radius       | expectedColor | expectedWidth | expectedHeight | expectedRadius
+            ${undefined} | ${undefined} | ${undefined} | ${undefined} | ${'olive'}    | ${50}         | ${50}          | ${0}
+            ${'red'}     | ${undefined} | ${undefined} | ${undefined} | ${'red'}      | ${50}         | ${50}          | ${0}
+            ${undefined} | ${100}       | ${undefined} | ${undefined} | ${'olive'}    | ${100}        | ${50}          | ${0}
+            ${undefined} | ${undefined} | ${120}       | ${undefined} | ${'olive'}    | ${50}         | ${120}         | ${0}
+            ${undefined} | ${undefined} | ${undefined} | ${3}         | ${'olive'}    | ${50}         | ${50}          | ${3}
         `(
-            'WHEN color is $color, width is $width and height is $height THEN style should be { backgroundColor: "$expectedColor", width: "$expectedWidth", height: "$expectedHeight",  }',
-            ({ color, width, height, expectedColor, expectedWidth, expectedHeight }) => {
+            'WHEN color is $color, width is $width and height is $height THEN style should be { backgroundColor: "$expectedColor", width: "$expectedWidth", height: "$expectedHeight", borderRadius: "$expectedRadius", }',
+            ({ color, width, height, expectedColor, radius, expectedWidth, expectedHeight, expectedRadius }) => {
                 const propsWithColor = {
                     ...defaultProps,
                     color,
                     width,
                     height,
+                    radius,
                 };
 
                 renderComponent(propsWithColor);
@@ -45,6 +47,7 @@ describe('Square Component', () => {
                 expect(style.backgroundColor).toBe(expectedColor);
                 expect(style.width).toBe(expectedWidth);
                 expect(style.height).toBe(expectedHeight);
+                expect(style.borderRadius).toBe(expectedRadius);
             }
         );
     });
