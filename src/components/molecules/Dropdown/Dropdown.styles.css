@@ -1,0 +1,8 @@
+.select {
+    padding: 5px;
+    color: darkolivegreen;
+    font-weight: bold;
+    border-radius: 3px;
+    border-color: darkolivegreen;
+    border-width: 2px;
+}

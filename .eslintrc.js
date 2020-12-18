@@ -39,5 +39,5 @@ module.exports = {
             },
         ],
     },
-    ignorePatterns: ['*.stories.tsx', '.eslintrc.js', '*.config.js', 'config/jest/*.js'],
+    ignorePatterns: ['*.stories.tsx', '.eslintrc.js', '*.config.js', 'config/jest/*.js', '.storybook/**/*', '*.md'],
 };

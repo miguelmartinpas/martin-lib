@@ -1,14 +1,14 @@
 import React from 'react';
-import './Square.styles.less';
+import './Square.styles.css';
 
-export interface ISquare {
+export interface ISquareProps {
     color?: string;
     width?: number;
     height?: number;
     radius?: number;
 }
 
-const Square = ({ color = 'olive', width = 50, height = 50, radius = 0 }: ISquare): React.ReactElement => {
+const Square = ({ color = 'olive', width = 50, height = 50, radius = 0 }: ISquareProps): React.ReactElement => {
     const divStyle = {
         backgroundColor: color,
         height,

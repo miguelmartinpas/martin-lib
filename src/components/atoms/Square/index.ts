@@ -1,5 +1,5 @@
-import Square, { ISquare } from './Square';
+import Square, { ISquareProps } from './Square';
 
-export type { ISquare };
+export type { ISquareProps };
 
 export default Square;

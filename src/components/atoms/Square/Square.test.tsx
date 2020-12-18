@@ -2,16 +2,16 @@ import React from 'react';
 import Enzyme, { mount, ReactWrapper } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import 'jest-enzyme';
-import Square, { ISquare } from './index';
+import Square, { ISquareProps } from './index';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-const defaultProps: ISquare = {};
+const defaultProps: ISquareProps = {};
 
 describe('Square Component', () => {
     let component: ReactWrapper;
 
-    const renderComponent = (props: ISquare = defaultProps) => {
+    const renderComponent = (props: ISquareProps = defaultProps) => {
         component = mount(<Square {...defaultProps} {...props} />);
     };
 

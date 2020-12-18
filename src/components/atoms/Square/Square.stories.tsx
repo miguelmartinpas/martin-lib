@@ -1,17 +1,17 @@
 import React from 'react';
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0';
-import Square, { ISquare } from './Square';
+import Square, { ISquareProps } from './Square';
 
 export default {
-    title: 'Example/Square',
+    title: 'martin-lib/Square',
     component: Square,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
 } as Meta;
 
-const Template: Story<ISquare> = (args) => <Square {...args} />;
+const Template: Story<ISquareProps> = (args) => <Square {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};
@@ -34,4 +34,12 @@ WithHeight.args = {
 export const WithRadius = Template.bind({});
 WithRadius.args = {
     radius: 5,
+};
+
+export const WithCustom = Template.bind({});
+WithCustom.args = {
+    color: 'lime',
+    width: 8,
+    height: 8,
+    radius: 8,
 };
