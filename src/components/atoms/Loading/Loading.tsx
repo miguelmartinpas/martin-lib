@@ -12,7 +12,7 @@ const Loading = ({ type = 'dual-ring', width = 50, height = width }: ILoadingPro
         height,
         width,
     };
-    return <div className={`loading ${type}`} style={divStyle} />;
+    return <div className={`ml-${type}`} style={divStyle} />;
 };
 
 export default Loading;

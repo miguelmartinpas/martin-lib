@@ -1,7 +1,7 @@
-.dual-ring {
+.ml-dual-ring {
     display: inline-block;
 }
-.dual-ring:after {
+.ml-dual-ring:after {
     content: ' ';
     display: block;
     width: 100%;
@@ -10,9 +10,9 @@
     border-radius: 50%;
     border: 6px solid olive;
     border-color: olive olive olive transparent;
-    animation: dual-ring 1.2s linear infinite;
+    animation: ml-dual-ring 1.2s linear infinite;
 }
-@keyframes dual-ring {
+@keyframes ml-dual-ring {
     0% {
         transform: rotate(0deg);
     }

@@ -15,7 +15,7 @@ const Square = ({ color = 'olive', width = 50, height = 50, radius = 0 }: ISquar
         width,
         borderRadius: radius,
     };
-    return <div className="square" style={divStyle} />;
+    return <div className="ml-square" style={divStyle} />;
 };
 
 export default Square;

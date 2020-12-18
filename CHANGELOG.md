@@ -1,3 +1,9 @@
+## [0.0.3] - 18/12/2020
+
+### Changed
+
+-   Add new Styles to Component
+
 ## [0.0.2] - 18/12/2020
 
 ### Changed

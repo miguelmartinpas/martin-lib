@@ -23,7 +23,7 @@ export const Dropdown = (props: IDropdownProps): React.ReactElement => {
     const { options, selected, disabled = false, onChange } = props;
     return (
         <select
-            className="select"
+            className="ml-select"
             onChange={(event: React.ChangeEvent<HTMLSelectElement>) => onChange(event.currentTarget.value)}
             defaultValue={selected}
             disabled={disabled}

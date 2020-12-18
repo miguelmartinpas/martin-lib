@@ -40,7 +40,7 @@ describe('Loading Component', () => {
 
             const { style = {}, className } = component.find('div').at(0).props();
 
-            expect(className).toBe(`loading ${expectedType}`);
+            expect(className).toBe(`ml-${expectedType}`);
             expect(style.width).toBe(expectedWidth);
             expect(style.height).toBe(expectedHeight);
         }
