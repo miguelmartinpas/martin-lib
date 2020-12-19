@@ -24,16 +24,17 @@ describe('Loading Component', () => {
     });
 
     it.each`
-        type         | width        | height       | expectedType   | expectedWidth | expectedHeight
-        ${undefined} | ${undefined} | ${undefined} | ${'dual-ring'} | ${50}         | ${50}
+        type         | width        | height       | hidden       | expectedType   | expectedWidth | expectedHeight | expectedDisplay
+        ${undefined} | ${undefined} | ${undefined} | ${undefined} | ${'dual-ring'} | ${50}         | ${50}          | ${'block'}
     `(
-        'WHEN type is $type, width is $width and height is $height THEN style should be { backgroundColor: "$expectedColor", width: "$expectedWidth", height: "$expectedHeight", borderRadius: "$expectedRadius", }',
-        ({ type, width, height, expectedType, expectedWidth, expectedHeight }) => {
+        'WHEN type is $type, width is $width and height is $height THEN style should be { width: "$expectedWidth", height: "$expectedHeight" }',
+        ({ type, width, height, hidden, expectedType, expectedWidth, expectedHeight, expectedDisplay }) => {
             const propsWithColor = {
                 ...defaultProps,
                 type,
                 width,
                 height,
+                hidden,
             };
 
             renderComponent(propsWithColor);
@@ -43,6 +44,7 @@ describe('Loading Component', () => {
             expect(className).toBe(`ml-${expectedType}`);
             expect(style.width).toBe(expectedWidth);
             expect(style.height).toBe(expectedHeight);
+            expect(style.display).toBe(expectedDisplay);
         }
     );
 });
