@@ -2,11 +2,11 @@
 
 martin-lib is a React componet librarie
 
-#setup
+# setup
 
 Clone project
 
-<code>git clone git+https://github.com/miguelmartinpas/martin-lib.git</code>
+<code>git clone https://github.com/miguelmartinpas/martin-lib.git</code>
 
 Install dependencies
 
@@ -35,6 +35,8 @@ It checks code with eslint and prettier
 <code>npm run lint</code>
 
 <code>npm run format</code>
+
+I have configured a git hook to fix format in a pre-commit
 
 # Storyboard
 
