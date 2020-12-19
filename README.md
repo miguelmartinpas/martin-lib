@@ -12,10 +12,9 @@ Install dependencies
 
 <code>npm install</code>
 
-#deploy
+# Deploy
 
-It uses github workflow to deploy a publish package in npmjs
-building with rollup librarie
+It uses github workflow to deploy a publish package in npmjs. Building with rollup librarie
 
 <code>npm run build</code>
 

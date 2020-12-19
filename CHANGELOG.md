@@ -1,3 +1,11 @@
+## [0.0.4] - 19/12/2020
+
+### Changed
+
+-   Add message param to DynamicTable component
+-   id field is mandatory in DynamicTable component
+-   Add hide param to Loading Component
+
 ## [0.0.3] - 18/12/2020
 
 ### Changed
