@@ -2,7 +2,7 @@
 
 martin-lib is a React componet librarie
 
-# setup
+# Setup
 
 Clone project
 
