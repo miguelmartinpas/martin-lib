@@ -21,7 +21,7 @@ jobs:
             - run: npm run test:coverage
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-            - run: npm run coverall
+            - run: npm run coveralls
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
                   COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
