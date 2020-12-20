@@ -16,7 +16,7 @@
         "test:coverage": "jest --coverage=true --verbose --detectOpenHandles",
         "test:watch": "jest --watch --coverage=false --detectOpenHandles",
         "test:debug": "jest -o --watch --coverage=false --detectOpenHandles",
-        "coverall": "coverall < coverage/lcov.info",
+        "coveralls": "coveralls < coverage/lcov.info",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
     },
