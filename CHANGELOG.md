@@ -1,3 +1,10 @@
+## [0.0.5] - 20/12/2020
+
+### Changed
+
+-   Update rollup config to compile components isolate
+-   change dist folder for lib
+
 ## [0.0.4] - 19/12/2020
 
 ### Changed

@@ -1,15 +1,15 @@
 {
     "name": "martin-lib",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Library of components for React",
-    "main": "dist/index.js",
+    "main": "lib/index.js",
     "files": [
-        "dist"
+        "lib"
     ],
-    "types": "dist/index.d.ts",
+    "types": "lib/index.d.ts",
     "scripts": {
-        "clean": "rm -rf dist",
-        "build": "npm run lint && npm run clean && rollup -c && tsc",
+        "clean": "rm -rf lib",
+        "build": "npm run clean && rollup -c && tsc",
         "format": "prettier --write src/**/*.ts{,x}",
         "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
         "test": "jest --coverage=false --verbose --detectOpenHandles",
