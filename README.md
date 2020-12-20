@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/miguelmartinpas/martin-lib/badge.svg?branch=main)](https://coveralls.io/github/miguelmartinpas/martin-lib?branch=main)
+
 # Overview
 
 martin-lib is a React componet librarie
@@ -27,6 +29,8 @@ It runs UT with Jest and Enzyme
 ##Coverage
 
 <code>npm run test:coverage</code>
+
+Coverage info in https://coveralls.io/github/miguelmartinpas/martin-lib
 
 # Lint & format
 
