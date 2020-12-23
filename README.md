@@ -50,8 +50,8 @@ Yu can check design and functionality of each component in a library
 
 <code>http://localhost:6006/</code>
 
-# npmjs
+# npmjs (https://www.npmjs.com/package/martin-lib)
 
 You can install with:
 
-<code> npm install martin-lib</code>
+<code>npm install martin-lib</code>
